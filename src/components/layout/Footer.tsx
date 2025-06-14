@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import PhoneLink from "../PhoneLink";
 
 const Footer = () => {
   return (
@@ -17,13 +18,14 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-300 mb-4 max-w-md">
-              Care that empowers independence and builds connections. 
-              Providing compassionate, personalized in-home care for seniors 
-              and new families in Minnesota.
+              Care that empowers independence and builds connections. Providing
+              compassionate, personalized in-home care for seniors and new
+              families in Minnesota.
             </p>
             <div className="space-y-2">
               <p className="text-gray-300">
-                <strong>Phone:</strong> (612) 400-4532
+                <strong>Phone:</strong>{" "}
+                <PhoneLink className="text-white hover:text-mariposa-orange transition-colors" />
               </p>
               <p className="text-gray-300">
                 <strong>Website:</strong> www.mariposahomecare.com
@@ -39,27 +41,42 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200">
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200">
+                <Link
+                  to="/about"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200">
+                <Link
+                  to="/services"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link to="/careers" className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200">
+                <Link
+                  to="/careers"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200">
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
                   Contact Us
                 </Link>
               </li>

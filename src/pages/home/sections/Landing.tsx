@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import smilingSeniorsImg from "../../../assets/images/smiling-seniors.jpg";
+import PhoneLink from "../../../components/PhoneLink";
 
 const Landing = () => {
   return (
@@ -70,7 +71,10 @@ const Landing = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold text-lg">(612) 400-4532</div>
+                  <PhoneLink
+                    phoneNumber="+16124004532"
+                    className="font-bold text-lg text-white hover:text-mariposa-orange transition-colors"
+                  />
                   <div className="text-sm text-gray-300">Free consultation</div>
                 </div>
               </div>
