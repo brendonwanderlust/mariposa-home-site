@@ -16,7 +16,7 @@ const Navbar = () => {
             <img
               src={mariposaLogo}
               alt="Mariposa Home Care Logo"
-              className="w-12 h-12 object-contain"
+              className="lg:w-18 lg:h-18 w-12 h-12 object-contain"
             />
             <div className="text-mariposa-orange">
               <div className="font-bold text-lg">MARIPOSA</div>
