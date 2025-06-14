@@ -28,37 +28,37 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-200 font-semibold"
+              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
             >
               Home
             </Link>
             <Link
               to="/seniors"
-              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-200 font-semibold"
+              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
             >
               Seniors
             </Link>
             <Link
               to="/families"
-              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-200 font-semibold"
+              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
             >
               New Families
             </Link>
             <Link
               to="/recruitment"
-              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-200 font-semibold"
+              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
             >
               Recruitment
             </Link>
             <Link
               to="/resources"
-              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-200 font-semibold"
+              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
             >
               Resources
             </Link>
             <Link
               to="/contact"
-              className="bg-mariposa-orange text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-200 font-semibold"
+              className="bg-mariposa-orange hover:bg-mariposa-orange-500 text-white px-6 py-2 rounded-full transition-all duration-300 font-semibold"
             >
               Get Started
             </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-200"
+              className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
             >
               <svg
                 className="h-6 w-6"
@@ -102,42 +102,42 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 to="/"
-                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-200"
+                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 Home
               </Link>
               <Link
                 to="/seniors"
-                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-200"
+                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 Seniors
               </Link>
               <Link
                 to="/families"
-                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-200"
+                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 New Families
               </Link>
               <Link
                 to="/recruitment"
-                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-200"
+                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 Recruitment
               </Link>
               <Link
                 to="/resources"
-                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-200"
+                className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                 onClick={toggleMenu}
               >
                 Resources
               </Link>
               <Link
                 to="/contact"
-                className="block mx-3 my-2 bg-mariposa-orange text-white px-4 py-2 rounded-full text-center hover:bg-opacity-90 transition-all duration-200"
+                className="block mx-3 my-2 bg-mariposa-orange hover:bg-mariposa-orange-500 text-white px-4 py-2 rounded-full text-center transition-all duration-300"
                 onClick={toggleMenu}
               >
                 Get Started
