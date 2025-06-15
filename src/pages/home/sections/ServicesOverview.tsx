@@ -251,7 +251,7 @@ const ServicesOverview = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center bg-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-100 hover:text-mariposa-orange transition-all duration-300 transform hover:scale-105"
+                className="inline-flex items-center bg-mariposa-orange border-2 border-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-mariposa-orange"
               >
                 Schedule Free Consultation
                 <svg
