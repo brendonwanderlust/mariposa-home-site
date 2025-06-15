@@ -47,13 +47,13 @@ const Landing = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="bg-mariposa-orange hover:bg-mariposa-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all"
+                className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-mariposa-orange"
               >
                 Schedule Your Free Consultation
               </Link>
               <Link
                 to="/services"
-                className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-navy transition-all"
+                className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-navy transition-all duration-300"
               >
                 Explore Our Services
               </Link>
@@ -139,7 +139,7 @@ const Landing = () => {
               <div className="mt-6 text-center">
                 <Link
                   to="/contact"
-                  className="inline-block bg-mariposa-green hover:bg-mariposa-green-500 text-white font-bold py-3 px-6 rounded-full transition-all duration-300"
+                  className="inline-block bg-mariposa-green border-2 border-mariposa-green text-white font-bold py-3 px-6 rounded-full transition-all duration-300 hover:bg-mariposa-green-50 hover:text-mariposa-green"
                 >
                   Schedule Free Consultation
                 </Link>

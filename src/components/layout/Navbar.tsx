@@ -58,7 +58,7 @@ const Navbar = () => {
             </Link>
             <Link
               to="/contact"
-              className="bg-mariposa-orange hover:bg-mariposa-orange-500 text-white px-6 py-2 rounded-full transition-all duration-300 font-semibold"
+              className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-6 py-2 rounded-full transition-all duration-300 font-semibold hover:bg-orange-100 hover:text-mariposa-orange"
             >
               Get Started
             </Link>
