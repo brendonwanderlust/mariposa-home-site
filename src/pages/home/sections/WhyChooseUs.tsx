@@ -7,6 +7,7 @@ import {
   Shield,
   Star,
 } from "lucide-react";
+import seniorsOverTeaImg from "../../../assets/images/seniors-over-tea.jpg";
 
 const WhyChooseUs = () => {
   const values = [
@@ -48,13 +49,12 @@ const WhyChooseUs = () => {
         "Our detailed matchmaking process ensures you're aligned with caregivers who truly understand your needs.",
     },
   ];
-
   const ValueCard = ({ value, index }: { value: any; index: number }) => (
     <div
       className={`group relative overflow-hidden rounded-3xl p-8 transition-all duration-500 hover:scale-105 hover:-translate-y-2 ${
         value.highlight
           ? "bg-gradient-to-br from-mariposa-orange via-orange-500 to-red-500 text-white shadow-2xl shadow-orange-200"
-          : "bg-white hover:bg-gradient-to-br hover:from-gray-50 hover:to-white shadow-lg hover:shadow-2xl border border-gray-100"
+          : "bg-white/90 backdrop-blur-sm hover:bg-white hover:bg-gradient-to-br hover:from-gray-50 hover:to-white shadow-lg hover:shadow-2xl border border-gray-100"
       }`}
       style={{
         animationDelay: `${index * 100}ms`,
@@ -112,31 +112,32 @@ const WhyChooseUs = () => {
   );
 
   return (
-    <section className="pb-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
-      {/* Background Elements */}
+    <section className="py-20 relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(248, 250, 252, 0.4) 30%, rgba(255, 255, 255, 0.95) 70%, rgba(248, 250, 252, 0.9) 100%), url('${seniorsOverTeaImg}')`,
+        }}
+      />
+
+      {/* Additional Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-64 h-64 bg-mariposa-green/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-mariposa-orange/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 -left-32 w-64 h-64 bg-mariposa-green/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-mariposa-orange/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-gradient-to-r from-mariposa-green/10 to-mariposa-orange/10 rounded-full px-6 py-2 mb-6">
-            <div className="w-2 h-2 bg-mariposa-orange rounded-full mr-3 animate-pulse"></div>
-            <span className="text-sm font-semibold text-mariposa-navy">
-              Our Core Values
-            </span>
-          </div>
-
-          <h2 className="text-4xl lg:text-6xl font-bold text-mariposa-navy mb-6 leading-tight">
+          <h2 className="text-4xl lg:text-6xl font-bold text-mariposa-navy mb-6 leading-tight drop-shadow-sm">
             Why Choose
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-mariposa-orange to-mariposa-green">
               Mariposa?
             </span>
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-sm">
             Our core values guide everything we do, creating a supportive and
             nurturing environment that builds lasting relationships within the
             communities we serve.
