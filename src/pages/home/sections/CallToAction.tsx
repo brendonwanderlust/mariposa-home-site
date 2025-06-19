@@ -183,12 +183,10 @@ const CallToAction = () => {
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-8 py-4">
             <div className="flex items-center space-x-4 text-white">
               <div className="flex items-center">
-                <span className="text-2xl mr-2">🇺🇸</span>
                 <span className="font-semibold">English</span>
               </div>
               <div className="w-px h-6 bg-white/30"></div>
               <div className="flex items-center">
-                <span className="text-2xl mr-2">🇪🇸</span>
                 <span className="font-semibold">Spanish</span>
               </div>
               <Globe className="w-5 h-5 ml-2" />

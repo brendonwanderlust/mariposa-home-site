@@ -5,7 +5,7 @@ import PhoneLink from "../../../components/PhoneLink";
 const Landing = () => {
   return (
     <section
-      className="relative min-h-screen bg-gradient-to-br from-mariposa-navy via-mariposa-navy to-blue-900 text-white bg-cover bg-center bg-no-repeat overflow-hidden py-6"
+      className="relative min-h-screen bg-gradient-to-br from-mariposa-navy via-mariposa-navy to-blue-900 text-white bg-cover bg-center bg-no-repeat overflow-hidden pt-28 lg:pt-32 py-6"
       style={{
         backgroundImage: `linear-gradient(135deg, rgba(21, 26, 58, 0.6) 0%, rgba(21, 26, 58, 0.4) 50%, rgba(21, 26, 58, 0.8) 100%), url('${smilingSeniorsImg}')`,
       }}
@@ -17,7 +17,7 @@ const Landing = () => {
         <div className="absolute bottom-20 right-1/4 w-32 h-32 bg-mariposa-orange opacity-20 rounded-full blur-xl animate-bounce delay-2000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 py-8 lg:py-12 min-h-screen flex flex-col justify-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12 min-h-screen flex flex-col justify-center">
         <main
           id="main"
           className="grid lg:grid-cols-12 gap-12 items-center w-full"

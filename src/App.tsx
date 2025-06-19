@@ -1,11 +1,12 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
-import Families from "./pages/Families";
+import Contact from "./pages/contact/Contact";
+import Families from "./pages/families/Families";
 import Home from "./pages/home/Home";
-import Recruitment from "./pages/Recruitment";
-import Resources from "./pages/Resources";
-import Seniors from "./pages/Seniors";
+import Recruitment from "./pages/recruitment/Recruitment";
+import Resources from "./pages/resources/Resources";
+import Seniors from "./pages/seniors/Seniors";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/families" element={<Families />} />
             <Route path="/recruitment" element={<Recruitment />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
