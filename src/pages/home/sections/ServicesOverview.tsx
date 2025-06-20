@@ -100,13 +100,7 @@ const ServicesOverview = () => {
     (service) => service.category === "family"
   );
 
-  const ServiceCard = ({
-    service,
-    index,
-  }: {
-    service: Service;
-    index: number;
-  }) => (
+  const ServiceCard = ({ service }: { service: Service; index: number }) => (
     <div
       className={`group relative bg-white rounded-3xl p-6 shadow-lg border-2 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${
         service.category === "senior"
