@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Pricing from "../../components/Pricing";
 
 const Seniors = () => {
   return (
@@ -151,6 +152,9 @@ const Seniors = () => {
           </div>
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <Pricing variant="seniors" />
 
       {/* CTA Section */}
       <section className="py-20 bg-mariposa-green">
