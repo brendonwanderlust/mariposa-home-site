@@ -12,6 +12,57 @@ const Pricing: React.FC<PricingProps> = ({
 }) => {
   const isOrange = variant === "families";
 
+  // Simple SVG pie chart approach
+  const createPieSlice = (
+    startAngle: number,
+    endAngle: number,
+    color: string
+  ) => {
+    const centerX = 120;
+    const centerY = 120;
+    const radius = 100;
+
+    const startAngleRad = (startAngle * Math.PI) / 180;
+    const endAngleRad = (endAngle * Math.PI) / 180;
+
+    const x1 = centerX + radius * Math.cos(startAngleRad);
+    const y1 = centerY + radius * Math.sin(startAngleRad);
+    const x2 = centerX + radius * Math.cos(endAngleRad);
+    const y2 = centerY + radius * Math.sin(endAngleRad);
+
+    const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+    const pathData = [
+      "M",
+      centerX,
+      centerY,
+      "L",
+      x1,
+      y1,
+      "A",
+      radius,
+      radius,
+      0,
+      largeArcFlag,
+      1,
+      x2,
+      y2,
+      "Z",
+    ].join(" ");
+
+    return <path d={pathData} fill={color} stroke="white" strokeWidth="2" />;
+  };
+
+  const getColors = () => {
+    if (isOrange) {
+      return ["#E68902", "#88AD17", "#151A3A"]; // Orange, Green, Navy
+    } else {
+      return ["#88AD17", "#E68902", "#151A3A"]; // Green, Orange, Navy
+    }
+  };
+
+  const colors = getColors();
+
   return (
     <section className={`py-20 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,45 +131,33 @@ const Pricing: React.FC<PricingProps> = ({
               </h3>
             </div>
 
-            {/* Pie Chart Style Layout */}
+            {/* SVG Pie Chart */}
             <div className="relative w-80 h-80 mx-auto">
-              {/* Background Circle */}
-              <div className="w-full h-full rounded-full relative overflow-hidden">
-                {/* Pie segments */}
-                <div
-                  className={`absolute inset-0 ${
-                    isOrange ? "bg-mariposa-orange" : "bg-mariposa-green"
-                  }`}
-                  style={{
-                    clipPath: "polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%)",
-                  }}
-                ></div>
-                <div
-                  className={`absolute inset-0 ${
-                    isOrange ? "bg-mariposa-green" : "bg-mariposa-orange"
-                  }`}
-                  style={{
-                    clipPath: "polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%)",
-                  }}
-                ></div>
-                <div
-                  className="absolute inset-0 bg-mariposa-navy"
-                  style={{
-                    clipPath:
-                      "polygon(50% 50%, 50% 100%, 0% 100%, 0% 0%, 50% 0%)",
-                  }}
-                ></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg
+                  width="240"
+                  height="240"
+                  viewBox="0 0 240 240"
+                  className="drop-shadow-lg"
+                >
+                  {/* Three 120-degree segments */}
+                  {createPieSlice(-90, 30, colors[0])} {/* Top segment */}
+                  {createPieSlice(30, 150, colors[1])}{" "}
+                  {/* Bottom-right segment */}
+                  {createPieSlice(150, 270, colors[2])}{" "}
+                  {/* Bottom-left segment */}
+                </svg>
               </div>
 
               {/* Service Minimum Callouts */}
-              {/* Top Right - 3-hour minimum */}
-              <div className="absolute -top-4 right-4">
-                <div className="bg-white rounded-2xl p-3 shadow-lg border border-gray-200 min-w-[180px]">
+
+              {/* Top - 3-hour minimum */}
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-200 min-w-[200px]">
                   <div className="flex items-center">
                     <div
-                      className={`w-8 h-8 ${
-                        isOrange ? "bg-mariposa-orange" : "bg-mariposa-green"
-                      } rounded-full flex items-center justify-center mr-3`}
+                      className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
+                      style={{ backgroundColor: colors[0] }}
                     >
                       <Clock className="w-4 h-4 text-white" />
                     </div>
@@ -127,27 +166,26 @@ const Pricing: React.FC<PricingProps> = ({
                     </div>
                   </div>
                 </div>
-                {/* Connector line */}
-                <div
-                  className={`absolute top-6 -left-4 w-4 h-px ${
-                    isOrange ? "bg-mariposa-orange" : "bg-mariposa-green"
-                  }`}
-                ></div>
-                <div
-                  className={`absolute top-6 -left-1 w-2 h-2 ${
-                    isOrange ? "bg-mariposa-orange" : "bg-mariposa-green"
-                  } rounded-full`}
-                ></div>
+                {/* Connector */}
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2">
+                  <div
+                    className="w-px h-8"
+                    style={{ backgroundColor: colors[0] }}
+                  ></div>
+                  <div
+                    className="w-2 h-2 rounded-full -ml-0.5"
+                    style={{ backgroundColor: colors[0] }}
+                  ></div>
+                </div>
               </div>
 
-              {/* Middle Right - 3 days per week */}
-              <div className="absolute top-1/2 -right-6 transform -translate-y-1/2">
-                <div className="bg-white rounded-2xl p-3 shadow-lg border border-gray-200 min-w-[180px]">
+              {/* Bottom Right - 3 days per week */}
+              <div className="absolute bottom-4 right-0 transform translate-x-6">
+                <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-200 min-w-[200px]">
                   <div className="flex items-center">
                     <div
-                      className={`w-8 h-8 ${
-                        isOrange ? "bg-mariposa-green" : "bg-mariposa-orange"
-                      } rounded-full flex items-center justify-center mr-3 text-sm font-bold text-white`}
+                      className="w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm font-bold text-white"
+                      style={{ backgroundColor: colors[1] }}
                     >
                       3
                     </div>
@@ -156,24 +194,27 @@ const Pricing: React.FC<PricingProps> = ({
                     </div>
                   </div>
                 </div>
-                {/* Connector line */}
-                <div
-                  className={`absolute top-1/2 -left-6 w-6 h-px ${
-                    isOrange ? "bg-mariposa-green" : "bg-mariposa-orange"
-                  }`}
-                ></div>
-                <div
-                  className={`absolute top-1/2 -left-1 w-2 h-2 ${
-                    isOrange ? "bg-mariposa-green" : "bg-mariposa-orange"
-                  } rounded-full transform -translate-y-1/2`}
-                ></div>
+                {/* Connector */}
+                <div className="absolute top-1/2 -left-6 transform -translate-y-1/2">
+                  <div
+                    className="h-px w-6"
+                    style={{ backgroundColor: colors[1] }}
+                  ></div>
+                  <div
+                    className="w-2 h-2 rounded-full -mt-1"
+                    style={{ backgroundColor: colors[1] }}
+                  ></div>
+                </div>
               </div>
 
-              {/* Bottom - 1-month commitment */}
-              <div className="absolute -bottom-4 right-4">
-                <div className="bg-white rounded-2xl p-3 shadow-lg border border-gray-200 min-w-[180px]">
+              {/* Bottom Left - 1-month commitment */}
+              <div className="absolute bottom-4 left-0 transform -translate-x-6">
+                <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-200 min-w-[200px]">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 bg-mariposa-navy rounded-full flex items-center justify-center mr-3">
+                    <div
+                      className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
+                      style={{ backgroundColor: colors[2] }}
+                    >
                       <Calendar className="w-4 h-4 text-white" />
                     </div>
                     <div className="text-sm font-semibold text-gray-700">
@@ -181,9 +222,17 @@ const Pricing: React.FC<PricingProps> = ({
                     </div>
                   </div>
                 </div>
-                {/* Connector line */}
-                <div className="absolute -top-2 -left-4 w-4 h-px bg-mariposa-navy"></div>
-                <div className="absolute -top-2 -left-1 w-2 h-2 bg-mariposa-navy rounded-full"></div>
+                {/* Connector */}
+                <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-6">
+                  <div
+                    className="h-px w-6"
+                    style={{ backgroundColor: colors[2] }}
+                  ></div>
+                  <div
+                    className="w-2 h-2 rounded-full -mt-1 ml-5"
+                    style={{ backgroundColor: colors[2] }}
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
