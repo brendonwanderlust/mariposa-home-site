@@ -130,7 +130,7 @@ const Navbar = () => {
                   to="/recruitment"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
                 >
-                  Recruitment
+                  Join Our Team
                 </Link>
                 <Link
                   to="/resources"
@@ -170,7 +170,7 @@ const Navbar = () => {
                   to="/recruitment"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
                 >
-                  Jobs
+                  Join Our Team
                 </Link>
                 <Link
                   to="/contact"
@@ -242,7 +242,7 @@ const Navbar = () => {
                     className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                     onClick={toggleMenu}
                   >
-                    Recruitment
+                    Join Our Team
                   </Link>
                   <Link
                     to="/resources"
