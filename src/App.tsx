@@ -7,11 +7,13 @@ import Home from "./pages/home/Home";
 import Recruitment from "./pages/recruitment/Recruitment";
 import Resources from "./pages/resources/Resources";
 import Seniors from "./pages/seniors/Seniors";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col" data-theme="mariposa">
+      <ScrollToTop />
         <Navbar />
         <main className="flex-grow">
           <Routes>

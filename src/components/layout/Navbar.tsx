@@ -107,7 +107,7 @@ const Navbar = () => {
               </Link>
 
               {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center space-x-8">
+              <div className="hidden lg:flex items-center space-x-8">
                 <Link
                   to="/"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
@@ -141,6 +141,40 @@ const Navbar = () => {
                 <Link
                   to="/contact"
                   className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-6 py-2 rounded-full transition-all duration-300 font-semibold hover:bg-orange-100 hover:text-mariposa-orange"
+                >
+                  Get Started
+                </Link>
+              </div>
+
+              {/* Tablet Navigation - Compact */}
+              <div className="hidden md:flex lg:hidden items-center space-x-4">
+                <Link
+                  to="/"
+                  className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/seniors"
+                  className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
+                >
+                  Seniors
+                </Link>
+                <Link
+                  to="/families"
+                  className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
+                >
+                  Families
+                </Link>
+                <Link
+                  to="/recruitment"
+                  className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
+                >
+                  Jobs
+                </Link>
+                <Link
+                  to="/contact"
+                  className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-4 py-2 rounded-full transition-all duration-300 font-medium text-sm hover:bg-orange-100 hover:text-mariposa-orange"
                 >
                   Get Started
                 </Link>
