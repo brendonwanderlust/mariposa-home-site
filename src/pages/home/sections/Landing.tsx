@@ -26,9 +26,7 @@ const Landing = () => {
           <div className="lg:col-span-7 space-y-8">
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <div className="w-2 h-2 bg-mariposa-green rounded-full mr-2 animate-pulse"></div>
-              <span className="text-sm font-medium">
-                Minneapolis-based • Bilingual Services
-              </span>
+              <span className="text-sm font-medium">Minneapolis-based</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">
@@ -40,7 +38,8 @@ const Landing = () => {
 
             <p className="text-lg lg:text-xl text-gray-200 max-w-2xl">
               Mariposa Home Care provides compassionate support for seniors and
-              new families across Minnesota—because support should meet you where you are.
+              new families across Minnesota—because support should meet you
+              where you are.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
