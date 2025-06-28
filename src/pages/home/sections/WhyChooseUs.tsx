@@ -16,7 +16,6 @@ const WhyChooseUs = () => {
       title: "Compassion First",
       description:
         "We lead with empathy and kindness in every interaction, treating each client with dignity and respect.",
-      highlight: true,
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
@@ -49,23 +48,16 @@ const WhyChooseUs = () => {
         "Our detailed matchmaking process ensures you're aligned with caregivers who truly understand your needs.",
     },
   ];
+
   const ValueCard = ({ value, index }: { value: any; index: number }) => (
     <div
-      className={`group relative overflow-hidden rounded-3xl p-8 transition-all duration-500 hover:scale-105 hover:-translate-y-2 ${
-        value.highlight
-          ? "bg-gradient-to-br from-mariposa-orange via-orange-500 to-red-500 text-white shadow-2xl shadow-orange-200"
-          : "bg-white/90 backdrop-blur-sm hover:bg-white hover:bg-gradient-to-br hover:from-gray-50 hover:to-white shadow-lg hover:shadow-2xl border border-gray-100"
-      }`}
+      className="group relative overflow-hidden rounded-3xl p-8 transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-white/90 backdrop-blur-sm hover:bg-white hover:bg-gradient-to-br hover:from-gray-50 hover:to-white shadow-lg hover:shadow-2xl border border-gray-100"
       style={{
         animationDelay: `${index * 100}ms`,
       }}
     >
       {/* Background Pattern */}
-      <div
-        className={`absolute inset-0 opacity-5 ${
-          value.highlight ? "opacity-10" : ""
-        }`}
-      >
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-current transform translate-x-16 -translate-y-16"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-current transform -translate-x-12 translate-y-12"></div>
       </div>
@@ -73,40 +65,19 @@ const WhyChooseUs = () => {
       {/* Content */}
       <div className="relative z-10">
         {/* Icon Container */}
-        <div
-          className={`w-20 h-20 rounded-2xl flex items-center justify-center mb-6 mx-auto transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${
-            value.highlight
-              ? "bg-white/20 backdrop-blur-sm text-white shadow-lg"
-              : "bg-gradient-to-br from-mariposa-green to-mariposa-orange text-white shadow-lg shadow-green-200"
-          }`}
-        >
+        <div className="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 mx-auto transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 bg-mariposa-navy text-white shadow-lg">
           {value.icon}
         </div>
 
         {/* Title */}
-        <h3
-          className={`text-xl font-bold text-center leading-tight mb-4 ${
-            value.highlight ? "text-white" : "text-mariposa-navy"
-          }`}
-        >
+        <h3 className="text-xl font-bold text-center leading-tight mb-4 text-mariposa-navy">
           {value.title}
         </h3>
 
         {/* Description */}
-        <p
-          className={`text-center leading-relaxed ${
-            value.highlight ? "text-white/90" : "text-gray-600"
-          }`}
-        >
+        <p className="text-center leading-relaxed text-gray-600">
           {value.description}
         </p>
-
-        {/* Highlight Badge */}
-        {value.highlight && (
-          <div className="absolute top-4 right-4">
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-          </div>
-        )}
       </div>
     </div>
   );

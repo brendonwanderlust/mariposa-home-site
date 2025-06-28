@@ -126,7 +126,7 @@ const Families = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6 text-white" />
               </div>
@@ -139,7 +139,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Calendar className="w-6 h-6 text-white" />
               </div>
@@ -152,7 +152,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <ChefHat className="w-6 h-6 text-white" />
               </div>
@@ -164,7 +164,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Package className="w-6 h-6 text-white" />
               </div>
@@ -176,7 +176,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Apple className="w-6 h-6 text-white" />
               </div>
@@ -189,7 +189,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Briefcase className="w-6 h-6 text-white" />
               </div>
@@ -201,7 +201,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <ShoppingCart className="w-6 h-6 text-white" />
               </div>
@@ -214,7 +214,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
@@ -227,7 +227,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Scissors className="w-6 h-6 text-white" />
               </div>
@@ -239,7 +239,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Moon className="w-6 h-6 text-white" />
               </div>
@@ -252,7 +252,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Car className="w-6 h-6 text-white" />
               </div>
@@ -264,7 +264,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
@@ -277,7 +277,7 @@ const Families = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:scale-105 cursor-pointer">
               <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
                 <Baby className="w-6 h-6 text-white" />
               </div>
