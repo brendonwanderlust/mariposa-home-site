@@ -1,4 +1,19 @@
 import { Link } from "react-router-dom";
+import {
+  Heart,
+  Calendar,
+  ChefHat,
+  Package,
+  Apple,
+  Briefcase,
+  ShoppingCart,
+  Users,
+  Scissors,
+  Moon,
+  Car,
+  MapPin,
+  Baby,
+} from "lucide-react";
 import Pricing from "../../components/Pricing";
 
 const Families = () => {
@@ -112,15 +127,35 @@ const Families = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Postpartum Support
+                Emotional Support
               </h3>
               <p className="text-gray-600">
-                Gentle care and assistance during recovery after childbirth
+                Compassionate listening and emotional wellness support during
+                your transition
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Calendar className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Family Scheduling and Alarms
+              </h3>
+              <p className="text-gray-600">
+                Help organizing schedules and setting reminders for important
+                family routines
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <ChefHat className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
                 Meal Prep - Frozen Meals
               </h3>
@@ -130,40 +165,127 @@ const Families = () => {
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Package className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Baby Organization
+                Baby Gear Returns/Exchange
               </h3>
               <p className="text-gray-600">
-                Setting up and organizing baby gear, supplies, and nursery
-                spaces
+                Assistance with returning or exchanging baby items and gear
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Apple className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Emotional Support
+                Snack Preparation
               </h3>
               <p className="text-gray-600">
-                Compassionate listening and encouragement during life
-                transitions
+                Healthy snack preparation to keep new parents nourished and
+                energized
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Briefcase className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Organization of Baby Supplies & Diaper Bags
+              </h3>
+              <p className="text-gray-600">
+                Setting up and organizing baby gear, supplies, and diaper bags
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <ShoppingCart className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
                 Grocery Planning
               </h3>
               <p className="text-gray-600">
-                Complete grocery planning, shopping, and household errands
+                Complete grocery planning and meal coordination for your
+                family's needs
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Breastfeeding Support
+                Gentle Encouragement and Emotional Companionship
               </h3>
               <p className="text-gray-600">
-                Help with positioning, comfort setup, and feeding assistance
+                Warm companionship and gentle encouragement during your
+                parenting journey
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Scissors className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Grooming Assistance
+              </h3>
+              <p className="text-gray-600">
+                Personal grooming assistance when self-care feels overwhelming
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Moon className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Support Through New Parent Rest and Recovery
+              </h3>
+              <p className="text-gray-600">
+                Gentle care and assistance during postpartum recovery and rest
+                periods
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Car className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Grocery Shopping, Pharmacy Pickups, and Basic Errands
+              </h3>
+              <p className="text-gray-600">
+                Complete errand assistance including shopping and pharmacy runs
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Light Event Help - First Doctor's Appointment Transportation,
+                First Shopping Trip
+              </h3>
+              <p className="text-gray-600">
+                Gentle assistance with important first outings and appointments
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-lg flex items-center justify-center mb-4">
+                <Baby className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Help with Breastfeeding Set-up (Positioning Water/Snacks)
+              </h3>
+              <p className="text-gray-600">
+                Support with positioning, comfort setup, and feeding assistance
               </p>
             </div>
           </div>
