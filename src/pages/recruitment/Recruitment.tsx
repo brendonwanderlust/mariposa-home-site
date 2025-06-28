@@ -5,7 +5,7 @@ const Recruitment = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-600 to-green-700 text-white py-20 pt-32">
+      <section className="bg-gradient-to-br from-green-600 to-green-700 text-white py-20 pt-40 lg:pt-48">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
