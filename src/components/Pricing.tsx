@@ -1,5 +1,6 @@
 import { Calendar, Clock } from "lucide-react";
 import React from "react";
+import PhoneLink from "./PhoneLink";
 
 interface PricingProps {
   variant?: "seniors" | "families";
@@ -100,7 +101,7 @@ const Pricing: React.FC<PricingProps> = ({
               </h3>
               <div className="flex items-baseline mb-4">
                 <span className="text-5xl font-bold text-mariposa-navy">
-                  $45
+                  $50
                 </span>
                 <span className="text-2xl text-gray-600 ml-2">per hour*</span>
               </div>
@@ -257,12 +258,11 @@ const Pricing: React.FC<PricingProps> = ({
             <button className="bg-white text-mariposa-navy border-2 border-white px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300">
               Schedule Free Consultation
             </button>
-            <a
-              href="tel:+16124004532"
+
+            <PhoneLink
+              displayText="Call (612) 400-4532"
               className="bg-mariposa-navy border-2 border-mariposa-navy text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-900 transition-all duration-300"
-            >
-              Call (612) 400-4532
-            </a>
+            ></PhoneLink>
           </div>
         </div>
       </div>

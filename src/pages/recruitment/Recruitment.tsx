@@ -18,7 +18,7 @@ const Recruitment = () => {
               connection.
             </p>
             <NavigationButton
-              url="https://linkedin.com/jobs"
+              url="https://www.linkedin.com/company/mariposa-home-care/jobs/"
               openInNewTab={true}
               className="bg-orange-500 border-2 border-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-orange-500"
             >
@@ -121,7 +121,7 @@ const Recruitment = () => {
                 <li>• New family support</li>
               </ul>
               <NavigationButton
-                url="https://linkedin.com/jobs"
+                url="https://www.linkedin.com/company/mariposa-home-care/jobs/"
                 openInNewTab={true}
                 className="block w-full bg-green-600 text-white text-center py-3 rounded-full font-semibold hover:bg-green-700 transition-colors mt-auto"
               >
@@ -152,7 +152,7 @@ const Recruitment = () => {
                 <li>• Administrative support</li>
               </ul>
               <NavigationButton
-                url="https://linkedin.com/jobs"
+                url="https://www.linkedin.com/company/mariposa-home-care/jobs/"
                 openInNewTab={true}
                 className="block w-full bg-orange-500 text-white text-center py-3 rounded-full font-semibold hover:bg-orange-600 transition-colors mt-auto"
               >
@@ -183,7 +183,7 @@ const Recruitment = () => {
                 <li>• Flexible time commitment</li>
               </ul>
               <NavigationButton
-                url="https://linkedin.com/jobs"
+                url="https://www.linkedin.com/company/mariposa-home-care/jobs/"
                 openInNewTab={true}
                 className="block w-full bg-blue-900 text-white text-center py-3 rounded-full font-semibold hover:bg-blue-800 transition-colors mt-auto"
               >
@@ -332,7 +332,7 @@ const Recruitment = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <NavigationButton
-              url="https://linkedin.com/jobs"
+              url="https://www.linkedin.com/company/mariposa-home-care/jobs/"
               openInNewTab={true}
               className="bg-orange-500 border-2 border-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-orange-500"
             >

@@ -90,7 +90,6 @@ const Footer = () => {
               <li>Senior Companion Care</li>
               <li>Personal Care Assistance</li>
               <li>Newborn & New Family Support</li>
-              <li>Caregiver Respite</li>
               <li>Light Housekeeping</li>
               <li>Transportation</li>
             </ul>

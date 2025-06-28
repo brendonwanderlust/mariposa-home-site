@@ -1,5 +1,18 @@
 import { Link } from "react-router-dom";
 import Pricing from "../../components/Pricing";
+import {
+  Heart,
+  ShoppingCart,
+  Home,
+  Car,
+  Droplets,
+  ChefHat,
+  Shield,
+  Clock,
+  PawPrint,
+  Video,
+  Wrench,
+} from "lucide-react";
 
 const Seniors = () => {
   return (
@@ -95,58 +108,140 @@ const Seniors = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Service cards will be added here */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
                 Companionship & Socialization
               </h3>
               <p className="text-gray-600">
-                Meaningful connections and warm support to combat isolation
+                Meaningful connections and warm support to combat isolation and
+                loneliness
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <ShoppingCart className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Personal Care Assistance
+                Running Errands
               </h3>
               <p className="text-gray-600">
-                Dignified support with bathing, oral hygiene, and daily needs
+                Grocery shopping, pharmacy visits, and other essential errands
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Home className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Meal Preparation
+                Light Housekeeping & Laundry
               </h3>
               <p className="text-gray-600">
-                Healthy meal planning and preparation for proper nutrition
+                Keeping your home clean, organized, and comfortable
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Car className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Transportation
+                Transportation to Appointments
               </h3>
               <p className="text-gray-600">
-                Safe transportation to appointments and errands
+                Safe, reliable transportation to medical appointments and social
+                activities
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Droplets className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Light Housekeeping
+                Bathing & Oral Hygiene Assistance
               </h3>
               <p className="text-gray-600">
-                Keeping your home clean and organized
+                Dignified personal care support to maintain health and comfort
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <ChefHat className="w-6 h-6 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Respite Care
+                Meal Preparation & Clean Up
               </h3>
               <p className="text-gray-600">
-                Relief for family caregivers with flexible support
+                Nutritious meal planning, cooking, and kitchen maintenance
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Safety & Fall Prevention
+              </h3>
+              <p className="text-gray-600">
+                Home safety assessments and support to prevent accidents
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Clock className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Medication Reminders & Hydration Support
+              </h3>
+              <p className="text-gray-600">
+                Gentle reminders for medications and encouragement to stay
+                hydrated
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <PawPrint className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Petcare & Vet Transportation
+              </h3>
+              <p className="text-gray-600">
+                Caring for beloved pets and transportation to veterinary
+                appointments
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Video className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Virtual Family Check-ins
+              </h3>
+              <p className="text-gray-600">
+                Technology support to stay connected with family and friends
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Wrench className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Light Handyman Services
+              </h3>
+              <p className="text-gray-600">
+                Simple home maintenance like changing lightbulbs and fire alarm
+                batteries
               </p>
             </div>
           </div>
