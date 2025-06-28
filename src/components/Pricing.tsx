@@ -125,114 +125,67 @@ const Pricing: React.FC<PricingProps> = ({
           </div>
 
           {/* Right Column - Service Minimums */}
-          <div className="relative">
+          <div>
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-mariposa-navy mb-2">
-                SERVICE MINIMUMS:
+                Service Minimums
               </h3>
+              <p className="text-gray-600">
+                Our flexible minimums ensure consistent, quality care
+              </p>
             </div>
 
-            {/* SVG Pie Chart */}
-            <div className="relative w-80 h-80 mx-auto">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg
-                  width="240"
-                  height="240"
-                  viewBox="0 0 240 240"
-                  className="drop-shadow-lg"
-                >
-                  {/* Three 120-degree segments */}
-                  {createPieSlice(-90, 30, colors[0])} {/* Top segment */}
-                  {createPieSlice(30, 150, colors[1])}{" "}
-                  {/* Bottom-right segment */}
-                  {createPieSlice(150, 270, colors[2])}{" "}
-                  {/* Bottom-left segment */}
-                </svg>
-              </div>
-
-              {/* Service Minimum Callouts */}
-
-              {/* Top - 3-hour minimum */}
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-200 min-w-[200px]">
-                  <div className="flex items-center">
-                    <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
-                      style={{ backgroundColor: colors[0] }}
-                    >
-                      <Clock className="w-4 h-4 text-white" />
-                    </div>
-                    <div className="text-sm font-semibold text-gray-700">
-                      3-hour minimum per visit
-                    </div>
+            {/* Service Minimum Cards */}
+            <div className="space-y-4">
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center">
+                  <div
+                    className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 bg-mariposa-navy`}
+                  >
+                    <Clock className="w-6 h-6 text-white" />
                   </div>
-                </div>
-                {/* Connector */}
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2">
-                  <div
-                    className="w-px h-8"
-                    style={{ backgroundColor: colors[0] }}
-                  ></div>
-                  <div
-                    className="w-2 h-2 rounded-full -ml-0.5"
-                    style={{ backgroundColor: colors[0] }}
-                  ></div>
+                  <div>
+                    <h4 className="text-lg font-bold text-mariposa-navy">
+                      3-Hour Minimum
+                    </h4>
+                    <p className="text-gray-600">
+                      Per visit to ensure meaningful care
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Bottom Right - 3 days per week */}
-              <div className="absolute bottom-4 right-0 transform translate-x-6">
-                <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-200 min-w-[200px]">
-                  <div className="flex items-center">
-                    <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm font-bold text-white"
-                      style={{ backgroundColor: colors[1] }}
-                    >
-                      3
-                    </div>
-                    <div className="text-sm font-semibold text-gray-700">
-                      At least 3 days per week
-                    </div>
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center">
+                  <div
+                    className={`w-12 h-12 rounded-full flex items-center justify-center mr-4 text-xl font-bold text-white bg-mariposa-navy `}
+                  >
+                    3
                   </div>
-                </div>
-                {/* Connector */}
-                <div className="absolute top-1/2 -left-6 transform -translate-y-1/2">
-                  <div
-                    className="h-px w-6"
-                    style={{ backgroundColor: colors[1] }}
-                  ></div>
-                  <div
-                    className="w-2 h-2 rounded-full -mt-1"
-                    style={{ backgroundColor: colors[1] }}
-                  ></div>
+                  <div>
+                    <h4 className="text-lg font-bold text-mariposa-navy">
+                      3 Days Per Week
+                    </h4>
+                    <p className="text-gray-600">
+                      Minimum to maintain consistency
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Bottom Left - 1-month commitment */}
-              <div className="absolute bottom-4 left-0 transform -translate-x-6">
-                <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-200 min-w-[200px]">
-                  <div className="flex items-center">
-                    <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center mr-3"
-                      style={{ backgroundColor: colors[2] }}
-                    >
-                      <Calendar className="w-4 h-4 text-white" />
-                    </div>
-                    <div className="text-sm font-semibold text-gray-700">
-                      1-month minimum commitment
-                    </div>
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4 bg-mariposa-navy">
+                    <Calendar className="w-6 h-6 text-white" />
                   </div>
-                </div>
-                {/* Connector */}
-                <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-6">
-                  <div
-                    className="h-px w-6"
-                    style={{ backgroundColor: colors[2] }}
-                  ></div>
-                  <div
-                    className="w-2 h-2 rounded-full -mt-1 ml-5"
-                    style={{ backgroundColor: colors[2] }}
-                  ></div>
+                  <div>
+                    <h4 className="text-lg font-bold text-mariposa-navy">
+                      1-Month Commitment
+                    </h4>
+                    <p className="text-gray-600">
+                      To build trusted relationships
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
