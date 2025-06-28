@@ -229,7 +229,6 @@ const Contact = () => {
                     <option value="">Select service type</option>
                     <option value="senior-care">Senior Care</option>
                     <option value="new-family">New Family Support</option>
-                    <option value="respite-care">Respite Care</option>
                     <option value="not-sure">Not Sure - Need Guidance</option>
                   </select>
                   {errors.serviceType && (
