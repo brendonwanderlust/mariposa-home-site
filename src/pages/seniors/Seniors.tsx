@@ -1,29 +1,29 @@
-import { Link } from "react-router-dom";
-import Pricing from "../../components/Pricing";
 import {
-  Heart,
-  ShoppingCart,
-  Home,
   Car,
-  Droplets,
   ChefHat,
-  Shield,
   Clock,
+  Droplets,
+  Heart,
+  Home,
   PawPrint,
+  Shield,
+  ShoppingCart,
   Video,
   Wrench,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import smilingSeniorsImg from "../../assets/images/smiling-seniors.jpg";
 import PhoneLink from "../../components/PhoneLink";
+import Pricing from "../../components/Pricing";
 
 const Seniors = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mariposa-navy to-blue-900 text-white py-12 pt-32 lg:pt-40 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-mariposa-green to-green-600 text-white py-12 pt-32 lg:pt-40 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-mariposa-green/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-green-400/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute top-1/2 -left-32 w-64 h-64 bg-mariposa-orange/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
         </div>
 
@@ -43,10 +43,10 @@ const Seniors = () => {
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Senior Care
-                <span className="block text-mariposa-green">Services</span>
+                <span className="block text-yellow-300">Services</span>
               </h1>
 
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl lg:mx-0 mx-auto">
+              <p className="text-xl text-green-100 mb-8 max-w-2xl lg:mx-0 mx-auto">
                 Compassionate in-home care that helps seniors maintain their
                 independence and dignity in the comfort of their own homes.
               </p>
@@ -61,22 +61,22 @@ const Seniors = () => {
                 </Link>
                 <PhoneLink
                   displayText="Call Now: (612) 400-4532"
-                  className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-navy transition-all duration-300"
+                  className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-green transition-all duration-300"
                 ></PhoneLink>
               </div>
 
               {/* Quick benefits */}
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-mariposa-green rounded-full"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
                   <span>No Long-term Contracts</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-mariposa-green rounded-full"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
                   <span>Background-Checked Staff</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-mariposa-green rounded-full"></div>
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
                   <span>Licensed & Insured</span>
                 </div>
               </div>
@@ -90,12 +90,12 @@ const Seniors = () => {
                     <Heart className="w-12 h-12 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
-                  <p className="text-blue-100 mb-6">
+                  <p className="text-green-100 mb-6">
                     Join the families who trust us to care for their loved ones
                     with dignity and respect.
                   </p>
                   <div className="bg-white/10 rounded-2xl p-4">
-                    <div className="text-3xl font-bold text-mariposa-green mb-2">
+                    <div className="text-3xl font-bold text-yellow-300 mb-2">
                       90%
                     </div>
                     <p className="text-sm">of seniors prefer aging at home</p>

@@ -383,7 +383,7 @@ const Contact = () => {
 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-mariposa-orange rounded-full flex items-center justify-center mr-4 mt-1 text-white font-bold text-sm">
+                    <div className="w-8 h-8 bg-mariposa-navy rounded-full flex items-center justify-center mr-4 mt-1 text-white font-bold text-sm">
                       1
                     </div>
                     <div>
@@ -398,7 +398,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-mariposa-green rounded-full flex items-center justify-center mr-4 mt-1 text-white font-bold text-sm">
+                    <div className="w-8 h-8 bg-mariposa-navy rounded-full flex items-center justify-center mr-4 mt-1 text-white font-bold text-sm">
                       2
                     </div>
                     <div>
@@ -428,7 +428,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-mariposa-orange rounded-full flex items-center justify-center mr-4 mt-1 text-white font-bold text-sm">
+                    <div className="w-8 h-8 bg-mariposa-navy rounded-full flex items-center justify-center mr-4 mt-1 text-white font-bold text-sm">
                       4
                     </div>
                     <div>

@@ -157,12 +157,6 @@ const ServicesOverview = () => {
                 </svg>
               </Link>
               <Link
-                to="/resources#pricing"
-                className="inline-flex items-center bg-mariposa-green border-2 border-mariposa-green text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-green-100 hover:text-mariposa-green"
-              >
-                View Pricing
-              </Link>
-              <Link
                 to="/about"
                 className="inline-flex items-center bg-white text-mariposa-navy px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300"
               >
