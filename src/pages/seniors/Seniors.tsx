@@ -13,6 +13,7 @@ import {
   Video,
   Wrench,
 } from "lucide-react";
+import smilingSeniorsImg from "../../assets/images/smiling-seniors.jpg";
 
 const Seniors = () => {
   return (
@@ -39,8 +40,16 @@ const Seniors = () => {
       </section>
 
       {/* Challenges Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white relative overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0.6) 100%), url('${smilingSeniorsImg}')`,
+          }}
+        />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">
               Challenges We Address
@@ -52,7 +61,7 @@ const Seniors = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-3xl p-8 text-center">
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-gray-100">
               <div className="w-16 h-16 bg-mariposa-green rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-white">35%</span>
               </div>
@@ -65,7 +74,7 @@ const Seniors = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-3xl p-8 text-center">
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-gray-100">
               <div className="w-16 h-16 bg-mariposa-orange rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-white">50%</span>
               </div>
@@ -78,7 +87,7 @@ const Seniors = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-3xl p-8 text-center">
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-gray-100">
               <div className="w-16 h-16 bg-mariposa-green rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-white">90%</span>
               </div>

@@ -93,7 +93,7 @@ const CallToAction = () => {
               </div>
 
               {/* Icon */}
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 text-mariposa-navy transition-all duration-300 group-hover:bg-mariposa-orange group-hover:text-white group-hover:scale-110">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 text-mariposa-navy transition-all duration-300 group-hover:bg-mariposa-navy group-hover:text-white group-hover:scale-110">
                 {step.icon}
               </div>
 

@@ -15,6 +15,7 @@ import {
   Baby,
 } from "lucide-react";
 import Pricing from "../../components/Pricing";
+import newFamilyImg from "../../assets/images/new-family.jpeg";
 
 const Families = () => {
   return (
@@ -40,8 +41,72 @@ const Families = () => {
         </div>
       </section>
 
+      {/* Family Facts Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0.6) 100%), url('${newFamilyImg}')`,
+          }}
+        />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-mariposa-navy mb-6">
+              Supporting New Families
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Every family's journey is unique, but these challenges are common.
+              We're here to help.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-gray-100">
+              <div className="w-16 h-16 bg-mariposa-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">85%</span>
+              </div>
+              <h3 className="text-xl font-bold text-mariposa-navy mb-4">
+                Need Extra Support
+              </h3>
+              <p className="text-gray-600">
+                85% of new parents need additional support during their first
+                months. Our care provides the helping hands you need.
+              </p>
+            </div>
+
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-gray-100">
+              <div className="w-16 h-16 bg-mariposa-green rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">72%</span>
+              </div>
+              <h3 className="text-xl font-bold text-mariposa-navy mb-4">
+                Feel Overwhelmed
+              </h3>
+              <p className="text-gray-600">
+                Transitions can feel overwhelming for 72% of families. We bring
+                calm, organization, and emotional support.
+              </p>
+            </div>
+
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 text-center shadow-lg border border-gray-100">
+              <div className="w-16 h-16 bg-mariposa-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-white">90%</span>
+              </div>
+              <h3 className="text-xl font-bold text-mariposa-navy mb-4">
+                Benefit from Care
+              </h3>
+              <p className="text-gray-600">
+                90% of families report improved wellbeing with professional
+                support during their transition to parenthood.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Challenges Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">

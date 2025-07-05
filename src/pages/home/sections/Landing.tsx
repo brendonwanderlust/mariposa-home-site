@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import smilingSeniorsImg from "../../../assets/images/smiling-seniors.jpg";
+import multigenerationalImg from "../../../assets/images/multigenerational-image.jpeg";
 import PhoneLink from "../../../components/PhoneLink";
 
 const Landing = () => {
@@ -7,7 +7,7 @@ const Landing = () => {
     <section
       className="relative min-h-screen bg-gradient-to-br from-mariposa-navy via-mariposa-navy to-blue-900 text-white bg-cover bg-center bg-no-repeat overflow-hidden pt-28 lg:pt-32 py-6"
       style={{
-        backgroundImage: `linear-gradient(135deg, rgba(21, 26, 58, 0.6) 0%, rgba(21, 26, 58, 0.4) 50%, rgba(21, 26, 58, 0.8) 100%), url('${smilingSeniorsImg}')`,
+        backgroundImage: `linear-gradient(135deg, rgba(21, 26, 58, 0.6) 0%, rgba(21, 26, 58, 0.4) 50%, rgba(21, 26, 58, 0.8) 100%), url('${multigenerationalImg}')`,
       }}
     >
       {/* Background animation */}
@@ -30,7 +30,7 @@ const Landing = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">
-              Empowering Independence
+              Empowering Every Generation
               <span className="block text-mariposa-orange">
                 Through In-Home Care
               </span>
@@ -38,8 +38,8 @@ const Landing = () => {
 
             <p className="text-lg lg:text-xl text-gray-200 max-w-2xl">
               Mariposa Home Care provides compassionate support for seniors and
-              new families across Minnesota—because support should meet you
-              where you are.
+              growing families across Minnesota—because support should meet you
+              where you are, at every stage of life.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -106,7 +106,7 @@ const Landing = () => {
                 Why Home Care Matters
               </h3>
               <p className="text-gray-300 text-center mb-6">
-                Supporting independence and wellbeing
+                Supporting every generation with compassionate care
               </p>
 
               <div className="space-y-4">
@@ -120,16 +120,16 @@ const Landing = () => {
                 </div>
                 <div className="bg-green-500/20 p-6 rounded-xl">
                   <div className="text-4xl font-bold text-mariposa-green">
-                    35%
+                    85%
                   </div>
                   <p className="text-white mt-2">
-                    experience chronic loneliness
+                    of new parents need extra support
                   </p>
                 </div>
-                <div className="bg-red-500/20 p-6 rounded-xl">
-                  <div className="text-4xl font-bold text-orange-400">50%</div>
+                <div className="bg-blue-500/20 p-6 rounded-xl">
+                  <div className="text-4xl font-bold text-blue-400">72%</div>
                   <p className="text-white mt-2">
-                    higher dementia risk from isolation
+                    of families feel overwhelmed in transitions
                   </p>
                 </div>
               </div>
