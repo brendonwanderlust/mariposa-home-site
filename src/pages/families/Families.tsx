@@ -21,22 +21,94 @@ const Families = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mariposa-orange to-orange-600 text-white py-20 pt-40 lg:pt-48">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              New Family Support
-            </h1>
-            <p className="text-xl text-orange-100 max-w-3xl mx-auto mb-8">
-              Compassionate care for new mothers and growing families during
-              life's most precious and challenging moments.
-            </p>
-            <Link
-              to="/contact"
-              className="bg-white text-mariposa-orange border-2 border-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100"
-            >
-              Schedule Free Consultation
-            </Link>
+      <section className="bg-gradient-to-br from-mariposa-orange to-orange-600 text-white py-12 pt-32 lg:pt-40 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-1/2 -left-32 w-64 h-64 bg-white/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Content Column */}
+            <div className="text-center lg:text-left">
+              {/* Trust Indicator Badge */}
+              <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <div className="flex items-center gap-1 mr-3">
+                  <span className="text-yellow-300">★★★★★</span>
+                </div>
+                <span className="text-sm font-medium">
+                  {" "}
+                  Serving families since 2025
+                </span>
+              </div>
+
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                New Family
+                <span className="block text-yellow-200">Support</span>
+              </h1>
+
+              <p className="text-xl text-orange-100 mb-8 max-w-2xl lg:mx-0 mx-auto">
+                Compassionate care for new mothers and growing families during
+                life's most precious and challenging moments.
+              </p>
+
+              {/* Enhanced CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                <Link
+                  to="/contact"
+                  className="bg-white text-mariposa-orange border-2 border-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:scale-105"
+                >
+                  Get Your Free 30-Min Consultation
+                </Link>
+                <a
+                  href="tel:+16124004532"
+                  className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-orange transition-all duration-300"
+                >
+                  Call Now: (612) 400-4532
+                </a>
+              </div>
+
+              {/* Quick benefits */}
+              <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
+                  <span>No Long-term Contracts</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
+                  <span>Background-Checked Staff</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
+                  <span>Licensed & Insured</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Visual Column */}
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                <div className="text-center">
+                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Baby className="w-12 h-12 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Ready to Start?</h3>
+                  <p className="text-orange-100 mb-6">
+                    Join hundreds of families who've found peace of mind with
+                    our support.
+                  </p>
+                  <div className="bg-white/10 rounded-2xl p-4">
+                    <div className="text-3xl font-bold text-yellow-300 mb-2">
+                      85%
+                    </div>
+                    <p className="text-sm">
+                      of families see immediate stress relief
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -50,7 +122,7 @@ const Families = () => {
             backgroundImage: `linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0.6) 100%), url('${newFamilyImg}')`,
           }}
         />
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">

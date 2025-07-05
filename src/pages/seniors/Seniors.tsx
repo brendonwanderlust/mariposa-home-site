@@ -14,27 +14,95 @@ import {
   Wrench,
 } from "lucide-react";
 import smilingSeniorsImg from "../../assets/images/smiling-seniors.jpg";
+import PhoneLink from "../../components/PhoneLink";
 
 const Seniors = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mariposa-navy to-blue-900 text-white py-20 pt-40 lg:pt-48">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Senior Care Services
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-              Compassionate in-home care that helps seniors maintain their
-              independence and dignity in the comfort of their own homes.
-            </p>
-            <Link
-              to="/contact"
-              className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-mariposa-orange"
-            >
-              Schedule Free Consultation
-            </Link>
+      <section className="bg-gradient-to-br from-mariposa-navy to-blue-900 text-white py-12 pt-32 lg:pt-40 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-mariposa-green/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-1/2 -left-32 w-64 h-64 bg-mariposa-orange/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Content Column */}
+            <div className="text-center lg:text-left">
+              {/* Trust Indicator Badge */}
+              <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                <div className="flex items-center gap-1 mr-3">
+                  <span className="text-yellow-300">★★★★★</span>
+                </div>
+                <span className="text-sm font-medium">
+                  Serving seniors since 2025
+                </span>
+              </div>
+
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                Senior Care
+                <span className="block text-mariposa-green">Services</span>
+              </h1>
+
+              <p className="text-xl text-blue-100 mb-8 max-w-2xl lg:mx-0 mx-auto">
+                Compassionate in-home care that helps seniors maintain their
+                independence and dignity in the comfort of their own homes.
+              </p>
+
+              {/* Enhanced CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                <Link
+                  to="/contact"
+                  className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-mariposa-orange hover:scale-105"
+                >
+                  Get Your Free 30-Min Consultation
+                </Link>
+                <PhoneLink
+                  displayText="Call Now: (612) 400-4532"
+                  className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-navy transition-all duration-300"
+                ></PhoneLink>
+              </div>
+
+              {/* Quick benefits */}
+              <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-mariposa-green rounded-full"></div>
+                  <span>No Long-term Contracts</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-mariposa-green rounded-full"></div>
+                  <span>Background-Checked Staff</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-mariposa-green rounded-full"></div>
+                  <span>Licensed & Insured</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Visual Column */}
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+                <div className="text-center">
+                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Heart className="w-12 h-12 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
+                  <p className="text-blue-100 mb-6">
+                    Join the families who trust us to care for their loved ones
+                    with dignity and respect.
+                  </p>
+                  <div className="bg-white/10 rounded-2xl p-4">
+                    <div className="text-3xl font-bold text-mariposa-green mb-2">
+                      90%
+                    </div>
+                    <p className="text-sm">of seniors prefer aging at home</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -48,7 +116,7 @@ const Seniors = () => {
             backgroundImage: `linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0.6) 100%), url('${smilingSeniorsImg}')`,
           }}
         />
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">

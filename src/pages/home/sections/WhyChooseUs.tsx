@@ -151,7 +151,7 @@ const WhyChooseUs = () => {
                 <div className="text-4xl lg:text-5xl font-bold text-mariposa-green mb-2">
                   24/7
                 </div>
-                <p className="text-gray-300">Support Available</p>
+                <p className="text-gray-300">Overnight Care Options</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
@@ -174,6 +174,9 @@ const WhyChooseUs = () => {
                 passed away, which gave me the inspiration for this company. I
                 could not have done it without a helping hand and a loving heart
                 standing beside me."
+                <footer className="mt-4 text-base not-italic text-gray-200">
+                  — Elizabeth Clifton, <cite className="font-medium">CEO & Founder</cite>
+                </footer>
               </blockquote>
               <p className="text-gray-300">
                 The name <em>Mariposa</em>—Spanish for butterfly—was inspired by

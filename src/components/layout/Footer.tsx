@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PhoneLink from "../PhoneLink";
+import mariposaSvg from "../../assets/images/mariposa-logo.png";
 
 const Footer = () => {
   return (
@@ -9,8 +10,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
+                <img 
+                  src={mariposaSvg} 
+                  alt="Mariposa Home Care Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="font-bold text-lg">MARIPOSA</div>
