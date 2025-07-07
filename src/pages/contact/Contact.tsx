@@ -1,3 +1,4 @@
+import { Globe, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -75,7 +76,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mariposa-navy to-blue-900 text-white py-20 pt-40 lg:pt-48">
+      <section className="bg-gradient-to-br from-mariposa-navy to-blue-900 text-white pb-5 pt-40 lg:pt-48 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
@@ -90,11 +91,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section className="py-10 lg:py-20 bg-white">
+        <div className="max-w-4xl lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-0 lg:gap-12">
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-3xl p-8">
+            <div className="bg-gray-50 rounded-3xl p-4 sm:p-8">
               <div className="mb-8">
                 <h2 className="text-3xl font-bold text-mariposa-navy mb-4">
                   Schedule Your Free Consultation
@@ -295,21 +296,15 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 mt-8 lg:mt-0">
               {/* Direct Contact */}
-              <div className="bg-gradient-to-br from-mariposa-green to-green-600 rounded-3xl p-8 text-white">
+              <div className="bg-gradient-to-br from-mariposa-green to-green-600 rounded-3xl p-4 sm:p-8 text-white">
                 <h3 className="text-2xl font-bold mb-6">Contact Us Directly</h3>
 
                 <div className="space-y-6">
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                      <svg
-                        className="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Phone className="w-6 h-6" />
                     </div>
                     <div>
                       <p className="font-semibold">Call Us</p>
@@ -323,15 +318,8 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                      <svg
-                        className="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <Globe className="w-6 h-6" />
                     </div>
                     <div>
                       <p className="font-semibold">Visit Our Website</p>
@@ -345,23 +333,19 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                      <svg
-                        className="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <MapPin className="w-6 h-6" />
                     </div>
                     <div>
                       <p className="font-semibold">Service Area</p>
-                      <p className="text-xl font-bold">
-                        Minneapolis, MN & Surrounding Areas
+                      <p className="text-xl font-bold mb-2">
+                        Twin Cities Metro Area
+                      </p>
+                      <p className="text-sm text-green-100">
+                        We serve Anoka, Carver, Dakota, Hennepin, Ramsey, Scott,
+                        and Washington counties. Please call to inquire about
+                        additional locations and if we have service in your
+                        area.
                       </p>
                     </div>
                   </div>
@@ -376,7 +360,7 @@ const Contact = () => {
               </div>
 
               {/* Process Steps */}
-              <div className="bg-white rounded-3xl p-8 shadow-lg">
+              <div className="bg-white rounded-3xl p-4 sm:p-8 shadow-lg">
                 <h3 className="text-2xl font-bold text-mariposa-navy mb-6">
                   What Happens Next?
                 </h3>
