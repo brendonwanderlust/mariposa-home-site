@@ -91,11 +91,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-10 lg:py-20 bg-white">
+      <section className="py-10 lg:py-20 bg-gray-50">
         <div className="max-w-4xl lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-0 lg:gap-12">
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-3xl p-4 sm:p-8">
+            <div className="bg-white rounded-3xl p-4 sm:p-8 shadow-lg border border-gray-100">
               <div className="mb-8">
                 <h2 className="text-3xl font-bold text-mariposa-navy mb-4">
                   Schedule Your Free Consultation
@@ -283,7 +283,7 @@ const Contact = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-mariposa-orange text-white py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition-colors shadow-lg"
+                  className="w-full bg-mariposa-orange text-white py-4 rounded-xl font-bold text-lg hover:bg-mariposa-orange/90 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-[1.02]"
                 >
                   Schedule Free Consultation
                 </button>
@@ -360,7 +360,7 @@ const Contact = () => {
               </div>
 
               {/* Process Steps */}
-              <div className="bg-white rounded-3xl p-4 sm:p-8 shadow-lg">
+              <div className="bg-white rounded-3xl p-4 sm:p-8 shadow-lg border border-mariposa-navy/10">
                 <h3 className="text-2xl font-bold text-mariposa-navy mb-6">
                   What Happens Next?
                 </h3>
