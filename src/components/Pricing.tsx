@@ -1,7 +1,6 @@
-import { Calendar, Clock, CheckCircle } from "lucide-react";
+import { Calendar, CheckCircle, Clock } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import PhoneLink from "./PhoneLink";
 
 interface PricingProps {
   variant?: "seniors" | "families" | "resources";
@@ -14,57 +13,6 @@ const Pricing: React.FC<PricingProps> = ({
 }) => {
   const isOrange = variant === "families";
   const isResources = variant === "resources";
-
-  // Simple SVG pie chart approach
-  const createPieSlice = (
-    startAngle: number,
-    endAngle: number,
-    color: string
-  ) => {
-    const centerX = 120;
-    const centerY = 120;
-    const radius = 100;
-
-    const startAngleRad = (startAngle * Math.PI) / 180;
-    const endAngleRad = (endAngle * Math.PI) / 180;
-
-    const x1 = centerX + radius * Math.cos(startAngleRad);
-    const y1 = centerY + radius * Math.sin(startAngleRad);
-    const x2 = centerX + radius * Math.cos(endAngleRad);
-    const y2 = centerY + radius * Math.sin(endAngleRad);
-
-    const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
-
-    const pathData = [
-      "M",
-      centerX,
-      centerY,
-      "L",
-      x1,
-      y1,
-      "A",
-      radius,
-      radius,
-      0,
-      largeArcFlag,
-      1,
-      x2,
-      y2,
-      "Z",
-    ].join(" ");
-
-    return <path d={pathData} fill={color} stroke="white" strokeWidth="2" />;
-  };
-
-  const getColors = () => {
-    if (isOrange) {
-      return ["#E68902", "#88AD17", "#151A3A"]; // Orange, Green, Navy
-    } else {
-      return ["#88AD17", "#E68902", "#151A3A"]; // Green, Orange, Navy
-    }
-  };
-
-  const colors = getColors();
 
   // Resources variant - simpler layout
   if (isResources) {
@@ -118,7 +66,9 @@ const Pricing: React.FC<PricingProps> = ({
                   to="/contact"
                   className="bg-mariposa-orange text-white px-4 sm:px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition-colors text-sm sm:text-base whitespace-nowrap"
                 >
-                  <span className="hidden sm:inline">Schedule Your Free Consultation</span>
+                  <span className="hidden sm:inline">
+                    Schedule Your Free Consultation
+                  </span>
                   <span className="sm:hidden">Free Consultation</span>
                 </Link>
               </div>
@@ -258,7 +208,7 @@ const Pricing: React.FC<PricingProps> = ({
         </div>
 
         {/* Bottom Call to Action */}
-        <div
+        {/* <div
           className={`mt-16 bg-gradient-to-r ${
             isOrange
               ? "from-mariposa-orange to-orange-600"
@@ -274,7 +224,9 @@ const Pricing: React.FC<PricingProps> = ({
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-mariposa-navy border-2 border-white px-4 sm:px-8 py-3 rounded-full font-bold text-sm sm:text-lg hover:bg-gray-100 transition-all duration-300">
-              <span className="hidden sm:inline">Schedule Free Consultation</span>
+              <span className="hidden sm:inline">
+                Schedule Free Consultation
+              </span>
               <span className="sm:hidden">Free Consultation</span>
             </button>
 
@@ -283,7 +235,7 @@ const Pricing: React.FC<PricingProps> = ({
               className="bg-mariposa-navy border-2 border-mariposa-navy text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-900 transition-all duration-300"
             ></PhoneLink>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

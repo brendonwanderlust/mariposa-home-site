@@ -12,6 +12,9 @@ const Contact = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
+
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleChange = (
@@ -62,14 +65,70 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validateForm()) {
-      // Handle form submission here
-      console.log("Form submitted:", formData);
-      alert(
-        "Thank you for your interest! We'll contact you soon to schedule your free consultation."
-      );
+    
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitMessage("");
+
+    try {
+      // Create the subject line based on service type
+      const serviceTypeMap: Record<string, string> = {
+        "senior-care": "Senior Care Inquiry",
+        "new-family": "New Family Support Inquiry",
+        "not-sure": "General Care Inquiry"
+      };
+
+      const subject = serviceTypeMap[formData.serviceType] || "Contact Form Submission";
+
+      // Prepare the data for the Firebase function
+      const emailData = {
+        name: formData.name,
+        email: formData.email,
+        subject,
+        message: `Service Type: ${formData.serviceType}
+Phone: ${formData.phone}
+Zip Code: ${formData.zipCode}
+Preferred Contact Time: ${formData.preferredContact || "No preference"}
+
+Message:
+${formData.message}`
+      };
+
+      // Call the Firebase function
+      const response = await fetch('https://us-central1-mariposa-home-care.cloudfunctions.net/sendContactEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(emailData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitMessage("Thank you for your message! We'll contact you within 24 hours to schedule your free consultation.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          zipCode: "",
+          serviceType: "",
+          preferredContact: "",
+          message: "",
+        });
+      } else {
+        throw new Error(result.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitMessage("Sorry, there was an error sending your message. Please try again or call us directly at (612) 400-4532.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -107,6 +166,14 @@ const Contact = () => {
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
+                {submitMessage && (
+                  <div className={`p-4 rounded-xl ${submitMessage.includes('error') || submitMessage.includes('Sorry') 
+                    ? 'bg-red-50 text-red-700 border border-red-200' 
+                    : 'bg-green-50 text-green-700 border border-green-200'
+                  }`}>
+                    {submitMessage}
+                  </div>
+                )}
                 {/* Name */}
                 <div>
                   <label
@@ -283,9 +350,14 @@ const Contact = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-mariposa-orange text-white py-4 rounded-xl font-bold text-lg hover:bg-mariposa-orange/90 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-[1.02]"
+                  disabled={isSubmitting}
+                  className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-200 shadow-lg ${
+                    isSubmitting 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-mariposa-orange hover:bg-mariposa-orange/90 hover:shadow-xl hover:scale-[1.02]'
+                  } text-white`}
                 >
-                  Schedule Free Consultation
+                  {isSubmitting ? 'Sending...' : 'Schedule Free Consultation'}
                 </button>
 
                 <p className="text-sm text-gray-600 text-center">

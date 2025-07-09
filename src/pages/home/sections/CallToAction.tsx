@@ -2,7 +2,6 @@ import {
   ArrowRight,
   Calendar,
   CheckCircle,
-  Globe,
   Mail,
   Phone,
   Target,
