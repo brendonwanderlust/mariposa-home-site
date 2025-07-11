@@ -43,7 +43,7 @@ const Seniors = () => {
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Senior Care
-                <span className="block text-yellow-300">Services</span>
+                <span className="block text-yellow-300">Support</span>
               </h1>
 
               <p className="text-xl text-green-100 mb-8 max-w-2xl lg:mx-0 mx-auto">

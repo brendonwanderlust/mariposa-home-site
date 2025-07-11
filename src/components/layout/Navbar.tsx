@@ -190,13 +190,13 @@ const Navbar = () => {
                   to="/seniors"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
                 >
-                  Seniors
+                  Senior Care
                 </Link>
                 <Link
                   to="/families"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-semibold"
                 >
-                  New Families
+                  New Family Care
                 </Link>
                 <Link
                   to="/recruitment"
@@ -230,13 +230,13 @@ const Navbar = () => {
                   to="/seniors"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
                 >
-                  Seniors
+                  Senior Care
                 </Link>
                 <Link
                   to="/families"
                   className="text-mariposa-orange hover:text-mariposa-green transition-colors duration-300 font-medium text-sm"
                 >
-                  Families
+                  New Family Care
                 </Link>
                 <Link
                   to="/recruitment"
@@ -300,14 +300,14 @@ const Navbar = () => {
                     className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                     onClick={toggleMenu}
                   >
-                    Seniors
+                    Senior Care
                   </Link>
                   <Link
                     to="/families"
                     className="block px-3 py-2 text-mariposa-orange hover:text-mariposa-green transition-colors duration-300"
                     onClick={toggleMenu}
                   >
-                    New Families
+                    New Family Care
                   </Link>
                   <Link
                     to="/recruitment"
