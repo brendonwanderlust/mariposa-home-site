@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import smilingSeniorsImg from "../../assets/images/smiling-seniors.jpg";
+import bikingSeniorsImg from "../../assets/images/biking-seniors.jpeg";
 import PhoneLink from "../../components/PhoneLink";
 import Pricing from "../../components/Pricing";
 
@@ -83,24 +84,13 @@ const Seniors = () => {
             </div>
 
             {/* Visual Column */}
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Heart className="w-12 h-12 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
-                  <p className="text-green-100 mb-6">
-                    Join the families who trust us to care for their loved ones
-                    with dignity and respect.
-                  </p>
-                  <div className="bg-white/10 rounded-2xl p-4">
-                    <div className="text-3xl font-bold text-yellow-300 mb-2">
-                      90%
-                    </div>
-                    <p className="text-sm">of seniors prefer aging at home</p>
-                  </div>
-                </div>
+            <div className="relative hidden lg:block">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 shadow-2xl w-fit mx-auto">
+                <img
+                  src={bikingSeniorsImg}
+                  alt="Senior Care Support"
+                  className="w-full max-w-md h-[500px] mx-auto rounded-2xl object-cover"
+                />
               </div>
             </div>
           </div>

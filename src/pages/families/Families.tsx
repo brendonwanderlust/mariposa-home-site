@@ -1,27 +1,28 @@
-import { Link } from "react-router-dom";
 import {
-  Heart,
-  Calendar,
-  ChefHat,
-  Package,
   Apple,
+  Baby,
   Briefcase,
+  Calendar,
+  Car,
+  ChefHat,
+  Heart,
+  MapPin,
+  Moon,
+  Package,
+  Scissors,
   ShoppingCart,
   Users,
-  Scissors,
-  Moon,
-  Car,
-  MapPin,
-  Baby,
 } from "lucide-react";
-import Pricing from "../../components/Pricing";
+import { Link } from "react-router-dom";
 import newFamilyImg from "../../assets/images/new-family.jpeg";
+import smilingParentImg from "../../assets/images/smiling-parent.jpeg";
+import Pricing from "../../components/Pricing";
 
 const Families = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mariposa-orange to-orange-600 text-white py-12 pt-32 lg:pt-40 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-mariposa-orange-400 to-mariposa-orange text-white py-12 pt-32 lg:pt-40 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -44,8 +45,8 @@ const Families = () => {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                New Family
-                <span className="block text-yellow-200">Support</span>
+                <span className="text-white">New Family</span>
+                <span className="block text-yellow-300">Support</span>
               </h1>
 
               <p className="text-xl text-orange-100 mb-8 max-w-2xl lg:mx-0 mx-auto">
@@ -87,26 +88,13 @@ const Families = () => {
             </div>
 
             {/* Visual Column */}
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Baby className="w-12 h-12 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">Ready to Start?</h3>
-                  <p className="text-orange-100 mb-6">
-                    Join hundreds of families who've found peace of mind with
-                    our support.
-                  </p>
-                  <div className="bg-white/10 rounded-2xl p-4">
-                    <div className="text-3xl font-bold text-yellow-300 mb-2">
-                      85%
-                    </div>
-                    <p className="text-sm">
-                      of families see immediate stress relief
-                    </p>
-                  </div>
-                </div>
+            <div className="relative hidden lg:block">
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 shadow-2xl w-fit mx-auto">
+                <img
+                  src={smilingParentImg}
+                  alt="New Family Support"
+                  className="w-full max-w-md h-[500px] mx-auto rounded-2xl object-cover"
+                />
               </div>
             </div>
           </div>
