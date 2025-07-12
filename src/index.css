@@ -38,3 +38,14 @@ body {
   background-color: white;
   color: var(--color-mariposa-navy);
 }
+
+/* Mobile background positioning for landing page */
+.mobile-bg-position {
+  background-position: 33% center;
+}
+
+@media (min-width: 1024px) {
+  .mobile-bg-position {
+    background-position: center center;
+  }
+}

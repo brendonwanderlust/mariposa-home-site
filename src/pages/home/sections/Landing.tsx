@@ -5,7 +5,7 @@ import PhoneLink from "../../../components/PhoneLink";
 const Landing = () => {
   return (
     <section
-      className="relative min-h-screen bg-gradient-to-br from-mariposa-navy via-mariposa-navy to-blue-900 text-white bg-cover bg-center bg-no-repeat overflow-hidden pt-28 lg:pt-32 py-6"
+      className="relative min-h-screen bg-gradient-to-br from-mariposa-navy via-mariposa-navy to-blue-900 text-white bg-cover bg-no-repeat overflow-hidden pt-28 lg:pt-32 py-6 mobile-bg-position"
       style={{
         backgroundImage: `linear-gradient(135deg, rgba(21, 26, 58, 0.6) 0%, rgba(21, 26, 58, 0.4) 50%, rgba(21, 26, 58, 0.8) 100%), url('${multigenerationalImg}')`,
       }}
