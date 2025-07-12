@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center">
               {/* Social Links */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2 sm:space-x-4">
                 <span className="hidden sm:inline text-gray-300">
                   Follow Us:
                 </span>
