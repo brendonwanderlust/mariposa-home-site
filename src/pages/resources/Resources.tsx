@@ -110,6 +110,75 @@ const Resources = () => {
         </div>
       </section> */}
 
+      {/* About Us Section */}
+      <section id="about" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-mariposa-navy mb-6">
+              About Mariposa Home Care
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We're basically professional human helpers who show up with snacks,
+              good vibes, and an impressive ability to find the TV remote.
+              Serving Minnesota with 99.9% more fun than your average care service.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-mariposa-navy mb-6">
+                Our Mission
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Our mission is simple: We're here to help you adult better when
+                adulting gets tough. Whether you need someone to remind you to
+                eat vegetables or help you figure out how to use that new fancy
+                coffee machine, we've got your back. Think of us as your personal
+                cheer squad with excellent organizational skills.
+              </p>
+              <p className="text-gray-600">
+                We're basically professional best friends who happen to be really
+                good at laundry, know all the good snacks, and can actually
+                remember where you put your glasses.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-mariposa-navy mb-6">
+                Why Choose Mariposa?
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-mariposa-orange rounded-full mt-2 mr-3"></div>
+                  <span className="text-gray-600">
+                    We're totally legit (licensed, bonded, and background-checked)
+                    and promise not to judge your sock drawer
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-mariposa-green rounded-full mt-2 mr-3"></div>
+                  <span className="text-gray-600">
+                    Flexible scheduling because life is unpredictable and we get it
+                    (no contracts that trap you like gym memberships)
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-mariposa-navy rounded-full mt-2 mr-3"></div>
+                  <span className="text-gray-600">
+                    We speak English, Spanish, and fluent "where did I put my keys?"
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-mariposa-orange rounded-full mt-2 mr-3"></div>
+                  <span className="text-gray-600">
+                    Custom care plans because you're unique (like your weird but
+                    endearing habit of talking to houseplants)
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Care Guides for Seniors Section */}
       <section
         id="guides"
@@ -310,7 +379,7 @@ const Resources = () => {
       </section>
 
       {/* Community Support Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="events">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">

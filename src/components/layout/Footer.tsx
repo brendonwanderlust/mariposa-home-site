@@ -94,6 +94,14 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
+                  to="/resources#about"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/resources#pricing"
                   className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
                 >
@@ -110,7 +118,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/resources"
+                  to="/resources#events"
                   className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
                 >
                   Senior Events
@@ -118,7 +126,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/resources"
+                  to="/resources#events"
                   className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
                 >
                   New Family Events
