@@ -6,10 +6,10 @@ const Recruitment = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-mariposa-navy to-blue-900 text-white py-20 pt-40 lg:pt-48 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-mariposa-green to-green-700 text-white py-20 pt-40 lg:pt-48 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-green-400/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute top-1/2 -left-32 w-64 h-64 bg-mariposa-orange/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
         </div>
 
@@ -18,7 +18,7 @@ const Recruitment = () => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               Join Our Team
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-green-100 max-w-3xl mx-auto mb-8">
               Make a meaningful difference in your community. Join a
               mission-driven team that values compassion, flexibility, and
               connection.

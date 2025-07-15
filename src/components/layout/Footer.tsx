@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import PhoneLink from "../PhoneLink";
 import mariposaSvg from "../../assets/images/mariposa-logo.png";
+import PhoneLink from "../PhoneLink";
 
 const Footer = () => {
   return (
@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
-                <img 
-                  src={mariposaSvg} 
-                  alt="Mariposa Home Care Logo" 
+                <img
+                  src={mariposaSvg}
+                  alt="Mariposa Home Care Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -88,15 +88,42 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* More Information */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Our Services</h3>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Senior Companion Care</li>
-              <li>Personal Care Assistance</li>
-              <li>Newborn & New Family Support</li>
-              <li>Light Housekeeping</li>
-              <li>Transportation</li>
+            <h3 className="font-bold text-lg mb-4">More Information</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/resources#pricing"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/resources#gift-cards"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
+                  Gift Cards
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/resources"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
+                  Senior Events
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/resources"
+                  className="text-gray-300 hover:text-mariposa-orange transition-colors duration-200"
+                >
+                  New Family Events
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

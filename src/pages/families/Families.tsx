@@ -16,6 +16,7 @@ import {
 import { Link } from "react-router-dom";
 import newFamilyImg from "../../assets/images/new-family.jpeg";
 import smilingParentImg from "../../assets/images/smiling-parent.jpeg";
+import PhoneLink from "../../components/PhoneLink";
 import Pricing from "../../components/Pricing";
 
 const Families = () => {
@@ -51,23 +52,22 @@ const Families = () => {
 
               <p className="text-xl text-orange-100 mb-8 max-w-2xl lg:mx-0 mx-auto">
                 Compassionate care for new mothers and growing families during
-                life's most precious and challenging moments.
+                life's most precious and challenging moments. You Focus on
+                Healing... We Handle the Rest
               </p>
 
               {/* Enhanced CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Link
                   to="/contact"
-                  className="bg-white text-mariposa-orange border-2 border-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:scale-105"
+                  className="flex-1 bg-white text-mariposa-orange border-2 border-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:scale-105 whitespace-nowrap text-center"
                 >
                   Get Your Free 30-Min Consultation
                 </Link>
-                <a
-                  href="tel:+16124004532"
-                  className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-orange transition-all duration-300"
-                >
-                  Call Now: (612) 400-4532
-                </a>
+                <PhoneLink
+                  displayText="Call Now: (612) 400-4532"
+                  className="flex-1 border-3 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-orange transition-all duration-300 whitespace-nowrap text-center"
+                ></PhoneLink>
               </div>
 
               {/* Quick benefits */}
@@ -394,8 +394,7 @@ const Families = () => {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-mariposa-navy mb-3">
-                Light Event Help - First Doctor's Appointment Transportation,
-                First Shopping Trip
+                Light Event Help - Doctor's Appointments, Shopping Trips
               </h3>
               <p className="text-gray-600">
                 Gentle assistance with important first outings and appointments

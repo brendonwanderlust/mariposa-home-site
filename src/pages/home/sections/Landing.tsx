@@ -38,7 +38,7 @@ const Landing = () => {
 
             <p className="text-lg lg:text-xl text-gray-200 max-w-2xl">
               Mariposa Home Care provides compassionate support for seniors and
-              growing families across Minnesota—because support should meet you
+              growing families across Minnesota—because care should meet you
               where you are, at every stage of life.
             </p>
 

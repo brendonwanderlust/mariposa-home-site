@@ -12,8 +12,8 @@ import {
   Wrench,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import smilingSeniorsImg from "../../assets/images/smiling-seniors.jpg";
 import bikingSeniorsImg from "../../assets/images/biking-seniors.jpeg";
+import smilingSeniorsImg from "../../assets/images/smiling-seniors.jpg";
 import PhoneLink from "../../components/PhoneLink";
 import Pricing from "../../components/Pricing";
 
@@ -56,13 +56,13 @@ const Seniors = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <Link
                   to="/contact"
-                  className="bg-mariposa-orange border-2 border-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-mariposa-orange hover:scale-105"
+                  className="flex-1 bg-mariposa-orange border-2 border-mariposa-orange text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all hover:bg-orange-100 hover:text-mariposa-orange hover:scale-105 whitespace-nowrap text-center"
                 >
                   Get Your Free 30-Min Consultation
                 </Link>
                 <PhoneLink
                   displayText="Call Now: (612) 400-4532"
-                  className="border-2 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-green transition-all duration-300"
+                  className="flex-1 border-3 border-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-mariposa-green transition-all duration-300 whitespace-nowrap text-center"
                 ></PhoneLink>
               </div>
 

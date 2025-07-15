@@ -1,11 +1,10 @@
 import {
   Baby,
-  BookOpen,
   Building2,
   Calendar,
-  ExternalLink,
   Heart,
-  MessageCircle,
+  Home,
+  Shield,
   Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -34,7 +33,7 @@ const Resources = () => {
       </section>
 
       {/* Resource Categories */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">
@@ -48,7 +47,7 @@ const Resources = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Testimonials */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8">
+      {/* <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8">
               <div className="w-16 h-16 bg-mariposa-green rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageCircle className="w-8 h-8 text-white" />
               </div>
@@ -66,10 +65,10 @@ const Resources = () => {
               >
                 Read Testimonials →
               </Link>
-            </div>
+            </div> */}
 
-            {/* Educational Content */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8">
+      {/* Educational Content */}
+      {/* <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8">
               <div className="w-16 h-16 bg-mariposa-orange rounded-full flex items-center justify-center mx-auto mb-6">
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
@@ -86,10 +85,10 @@ const Resources = () => {
               >
                 Browse Guides →
               </Link>
-            </div>
+            </div> */}
 
-            {/* Community Partnerships */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8">
+      {/* Community Partnerships */}
+      {/* <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8">
               <div className="w-16 h-16 bg-mariposa-navy rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-white" />
               </div>
@@ -109,24 +108,30 @@ const Resources = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Care Guides Section */}
-      <section id="guides" className="py-20 bg-white">
+      {/* Care Guides for Seniors Section */}
+      <section
+        id="guides"
+        className="py-20 bg-gradient-to-br from-green-50 to-green-100"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-mariposa-navy mb-6">
-              Care Guides & Educational Resources
+              Care Guides for Seniors
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Helpful articles and guides to support you through your care
-              journey.
+              Resources and guides to support seniors and their families in
+              maintaining independence, safety, and quality of life.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-mariposa-navy mb-3">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Home className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
                 Aging at Home: A Family Guide
               </h3>
               <p className="text-gray-600 mb-4">
@@ -138,8 +143,60 @@ const Resources = () => {
               </span>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-mariposa-navy mb-3">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Caregiver Self-Care Tips
+              </h3>
+              <p className="text-gray-600 mb-4">
+                How family caregivers can maintain their own wellbeing while
+                caring for loved ones.
+              </p>
+              <span className="text-mariposa-green font-semibold">
+                Coming Soon
+              </span>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-green rounded-full flex items-center justify-center mb-4">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Safety at Home for Seniors
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Home safety tips and modifications to prevent falls and create a
+                secure living environment.
+              </p>
+              <span className="text-mariposa-green font-semibold">
+                Coming Soon
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Care Guides for New Families Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-mariposa-navy mb-6">
+              Care Guides for New Families
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Essential resources and support guides for new parents navigating
+              the early days of parenthood and recovery.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-full flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
                 Postpartum Recovery Support
               </h3>
               <p className="text-gray-600 mb-4">
@@ -151,15 +208,34 @@ const Resources = () => {
               </span>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-mariposa-navy mb-3">
-                Caregiver Self-Care Tips
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-full flex items-center justify-center mb-4">
+                <Baby className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Newborn Care Essentials
               </h3>
               <p className="text-gray-600 mb-4">
-                How family caregivers can maintain their own wellbeing while
-                caring for loved ones.
+                Practical tips for caring for your newborn, including feeding,
+                sleeping, and bonding techniques.
               </p>
-              <span className="text-mariposa-navy font-semibold">
+              <span className="text-mariposa-orange font-semibold">
+                Coming Soon
+              </span>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
+              <div className="w-12 h-12 bg-mariposa-orange rounded-full flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-mariposa-navy mb-3">
+                Building Your Village
+              </h3>
+              <p className="text-gray-600 mb-4">
+                How to create a support network and ask for help during the
+                transition to parenthood.
+              </p>
+              <span className="text-mariposa-orange font-semibold">
                 Coming Soon
               </span>
             </div>
@@ -248,75 +324,101 @@ const Resources = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Social Media Community */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center flex flex-col">
               <div className="w-16 h-16 bg-mariposa-navy rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-mariposa-navy mb-4">
                 Join Our Community
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 flex-grow">
                 Connect with other families, share experiences, and get
                 additional support through our social media communities.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-auto">
                 <a
                   href="https://facebook.com/mariposahomecare"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
-                  <ExternalLink className="w-5 h-5 mr-2" />
+                  <svg
+                    className="w-5 h-5 mr-2"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Facebook</title>
+                    <path
+                      className="fill-current"
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                    />
+                  </svg>
                   Facebook
                 </a>
                 <a
                   href="https://instagram.com/mariposahomecare"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-colors"
+                  className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
-                  <ExternalLink className="w-5 h-5 mr-2" />
+                  <svg
+                    role="img"
+                    className="w-5 h-5 mr-2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Instagram</title>
+                    <path
+                      className="fill-current"
+                      d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                    />
+                  </svg>
                   Instagram
                 </a>
               </div>
             </div>
 
             {/* Events & Support */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 text-center">
-              <div className="w-16 h-16 bg-mariposa-green rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100  rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-mariposa-orange rounded-full flex items-center justify-center mx-auto mb-6">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-mariposa-navy mb-4">
-                Events & Support Groups
+                Events & Community Building
               </h3>
               <p className="text-gray-600 mb-6">
                 Participate in virtual and in-person events designed to support
                 families and caregivers in our community.
               </p>
-              <div className="space-y-3 text-left">
+              <div className="space-y-3 text-left mb-6">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-mariposa-green rounded-full mr-3"></div>
-                  <span className="text-gray-600">
-                    Monthly virtual support groups
-                  </span>
+                  <div className="w-2 h-2 bg-mariposa-orange rounded-full mr-3"></div>
+                  <span className="text-gray-600">Virtual support groups</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-mariposa-green rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-mariposa-orange rounded-full mr-3"></div>
                   <span className="text-gray-600">Educational workshops</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-mariposa-green rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-mariposa-orange rounded-full mr-3"></div>
                   <span className="text-gray-600">
                     Community wellness events
                   </span>
                 </div>
               </div>
-              <div className="mt-6">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   to="/contact"
-                  className="bg-mariposa-green text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors"
+                  className="bg-mariposa-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 hover:shadow-lg transition-all duration-300"
                 >
-                  Learn About Events
+                  New Family Events
+                </Link>
+                <Link
+                  to="/contact"
+                  className="bg-mariposa-green text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 hover:scale-105 hover:shadow-lg transition-all duration-300"
+                >
+                  Senior Events
                 </Link>
               </div>
             </div>
@@ -325,7 +427,7 @@ const Resources = () => {
       </section>
 
       {/* Gift Cards Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="gift-cards">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-mariposa-orange to-orange-600 rounded-3xl p-8 lg:p-12 text-white text-center">
             <h2 className="text-4xl font-bold mb-6">Gift Cards Available</h2>
